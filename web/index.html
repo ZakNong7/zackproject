@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zackproject</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">zackproject<span>.</span></div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Layanan</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Buat Identitas Visual yang Mengesankan</h1>
+        <p>
+          Kami membantu brand Anda tampil menonjol melalui desain kreatif dan
+          strategi visual yang kuat.
+        </p>
+        <button onclick="scrollToSection('contact')">Hubungi Kami</button>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Layanan Kami</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Branding</h3>
+          <p>Membangun identitas merek yang kuat dan konsisten.</p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p>
+            Desain antarmuka yang intuitif dan pengalaman pengguna yang
+            memuaskan.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Desain Grafis</h3>
+          <p>
+            Dari logo hingga poster, kami siap menciptakan visual yang menarik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section dark">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="work">
+          <img
+            src="https://source.unsplash.com/400x300/?branding"
+            alt="Branding"
+          />
+        </div>
+        <div class="work">
+          <img src="https://source.unsplash.com/400x300/?design" alt="Design" />
+        </div>
+        <div class="work">
+          <img src="https://source.unsplash.com/400x300/?logo" alt="Logo" />
+        </div>
+        <div class="work">
+          <img
+            src="https://source.unsplash.com/400x300/?website"
+            alt="Website"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Hubungi Kami</h2>
+      <form class="contact-form" onsubmit="return sendMessage(event)">
+        <input type="text" id="name" placeholder="Nama Anda" required />
+        <input type="email" id="email" placeholder="Email Anda" required />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Pesan Anda..."
+          required
+        ></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <p id="success-message" class="success-message"></p>
+    </section>
+
+    <footer>
+      <p>© 2025 Visionary Design Studio | Dibuat dengan ❤️ oleh Tim Kreatif</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
